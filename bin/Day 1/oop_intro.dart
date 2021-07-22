@@ -17,8 +17,11 @@ class Student {
 void main() {
   var job = Student();
   print(job);
-  print(job.toJson());
+  job
+    ..age = 12
+    ..dept = 'Computer Science'
+    ..hasPaid = true
+    ..name = 'Owonubi Job Sunday';
 
-  // Object Serialization
-  // adding JSON
+  print(job.toJson());
 }
