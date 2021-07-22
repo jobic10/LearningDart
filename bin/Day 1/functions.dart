@@ -5,6 +5,10 @@ void main() {
   print(loadProfile('Job'));
   print(loadProfile('Liz', 'Manager'));
   print(add(1, 2));
+  const values = [13, 35, 3, 23, 4, 5, 3, 35];
+  values.forEach((element) {
+    print(element);
+  });
 }
 
 void echo({String str}) {
