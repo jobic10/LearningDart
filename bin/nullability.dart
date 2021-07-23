@@ -1,4 +1,5 @@
 void main() {
-  // int phone = null;
-  // print(phone.isEven);
+  String? name;
+  name = 'Job';
+  print(name.length);
 }
