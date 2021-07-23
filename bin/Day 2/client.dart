@@ -4,7 +4,8 @@ class Client {
   double _accountBalance;
 
   Client({int id, String name, double accountBalance})
-      : _id = id,
+      : assert(accountBalance >= 0),
+        _id = id,
         _name = name,
         _accountBalance = accountBalance;
 
