@@ -7,7 +7,9 @@ class Client {
       : _id = id,
         _name = name,
         _accountBalance = accountBalance;
-
+  int get id => _id;
+  String get name => _name;
+  double get accountBalance => _accountBalance;
   @override
   String toString() {
     return '$_name with ID $_id has $_accountBalance balance';
