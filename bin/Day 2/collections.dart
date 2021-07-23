@@ -44,4 +44,8 @@ void main() {
   // Collection If
   var myFavs = ['Python', 'Dart', if (devTools.contains('Dart')) 'Skipped'];
   print(myFavs);
+
+  // Collection For
+  var upperCase = [for (var f in devTools) f.toUpperCase()];
+  print(upperCase);
 }
