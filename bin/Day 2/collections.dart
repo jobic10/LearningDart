@@ -40,4 +40,8 @@ void main() {
   List? firstList;
   var secondList = ['one', ...?firstList];
   print(secondList);
+
+  // Collection If
+  var myFavs = ['Python', 'Dart', if (devTools.contains('Dart')) 'Skipped'];
+  print(myFavs);
 }
