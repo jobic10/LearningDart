@@ -4,11 +4,12 @@ class Student {
   int age;
   int level;
 
-  Student({this.name, this.age, this.dept, this.level});
+  Student(
+      {this.name = 'Undefined',
+      this.age = 0,
+      this.dept = 'G',
+      this.level = 100});
 
-  Student.utme({this.name, this.dept}) {
-    level = 100;
-  }
   // Student.direct_entry({this.name, this.dept}) {
   //   level = 200;
   // }

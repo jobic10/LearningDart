@@ -1,8 +1,8 @@
 class Student {
-  String name;
-  String dept;
-  int age;
-  bool hasPaid;
+  String? name;
+  String? dept;
+  int? age;
+  bool? hasPaid;
 
   @override
   String toString() {

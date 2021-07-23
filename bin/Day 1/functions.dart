@@ -11,7 +11,7 @@ void main() {
   });
 }
 
-void echo({String str}) {
+void echo({String? str}) {
   // Has side effect
   print(str);
 }

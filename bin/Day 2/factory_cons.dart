@@ -2,16 +2,10 @@ class Student {
   String name;
   String matric_no; // Unique
 
-  Student._createInstance({this.matric_no, this.name});
+  Student._createInstance({this.matric_no = '122', this.name = 'Unknown'});
   factory Student(matric_no, name) {
-    if (db.containsKey(matric_no)) {
-      print('Instance exist with parameter $matric_no');
-      return db[matric_no];
-    }
-    print('Creating a new instance with parameter $matric_no');
-    var obj = Student._createInstance(name: name, matric_no: matric_no);
-    db.addAll({matric_no: obj});
-    return obj;
+    return db.putIfAbsent(matric_no,
+        () => Student._createInstance(matric_no: matric_no, name: name));
   }
   static final Map<String, Student> db = {};
 
