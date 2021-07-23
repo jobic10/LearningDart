@@ -1,11 +1,10 @@
 class Client {
-  int _id;
-  String _name;
-  double _accountBalance;
+  final int _id;
+  final String _name;
+  final double _accountBalance;
 
   Client({int id, String name, double accountBalance})
-      : assert(accountBalance >= 0),
-        _id = id,
+      : _id = id,
         _name = name,
         _accountBalance = accountBalance;
 
