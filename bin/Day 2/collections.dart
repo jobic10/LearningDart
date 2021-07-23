@@ -23,4 +23,9 @@ void main() {
   var expelStudents = List.unmodifiable(['elements', 'elemem']);
   // expelStudents.add('value');
   print(expelStudents);
+
+  // Foreach
+  pl.forEach((element) {
+    print('My name is $element');
+  });
 }
