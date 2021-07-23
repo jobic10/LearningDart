@@ -7,4 +7,13 @@ void main() {
   double? price;
   price ??= 29;
   print(price);
+
+  // * Null aware access ?.
+  String? lga;
+  print(lga?.length);
+
+  // * Null assertation !
+  int? age;
+  var myAge = age!;
+  print(myAge);
 }
