@@ -48,4 +48,7 @@ void main() {
   // Collection For
   var upperCase = [for (var f in devTools) f.toUpperCase()];
   print(upperCase);
+
+  print(pl.join('-'));
+  print(pl.takeWhile((value) => value.length > 2));
 }
