@@ -35,4 +35,9 @@ void main() {
   // Spread Operator
   var devTools = ['Computer', ...expelStudents, ...pl];
   print(devTools);
+
+  // Null Spread
+  List? firstList;
+  var secondList = ['one', ...?firstList];
+  print(secondList);
 }
