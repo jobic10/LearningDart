@@ -31,4 +31,8 @@ void main() {
 
   //Tear off
   pl.forEach(print);
+
+  // Spread Operator
+  var devTools = ['Computer', ...expelStudents, ...pl];
+  print(devTools);
 }
