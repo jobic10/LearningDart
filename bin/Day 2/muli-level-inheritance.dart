@@ -27,4 +27,6 @@ void main() {
   var myCar = SUV('Job', 'SUV 2018 AE', 289.2);
   print(myCar.highestSpeed);
   myCar.move();
+
+  print(myCar is Car);
 }
