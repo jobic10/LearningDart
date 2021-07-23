@@ -28,4 +28,7 @@ void main() {
   pl.forEach((element) {
     print('My name is $element');
   });
+
+  //Tear off
+  pl.forEach(print);
 }
