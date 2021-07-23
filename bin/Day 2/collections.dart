@@ -2,5 +2,10 @@ void main() {
   // List
   List pl = <String>['Dart', 'Java', 'Python'];
   pl.add('newValue');
-  print(pl[0]);
+  pl.addAll(<String>['iterable', 'iter2']);
+  print(pl);
+  print('***' * 16);
+  print(pl.where((element) => element.length > 4));
+  print('***' * 16);
+  print(pl);
 }
