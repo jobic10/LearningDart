@@ -14,4 +14,5 @@ void main() {
   amounts = [];
   final total2 = amounts.fold(0, (int s, e) => s + e);
   print(total2);
+  amounts.sort();
 }
