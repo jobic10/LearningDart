@@ -18,4 +18,9 @@ void main() {
   ];
   var flattened = pairs.expand((pair) => pair).toList();
   print(flattened);
+
+  // Immutable List
+  var expelStudents = List.unmodifiable(['elements', 'elemem']);
+  // expelStudents.add('value');
+  print(expelStudents);
 }
