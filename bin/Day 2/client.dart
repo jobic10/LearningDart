@@ -1,16 +1,16 @@
 class Client {
-  int? _id;
-  String? _name;
-  double? _accountBalance;
+  int _id;
+  String _name;
+  double _accountBalance;
 
-  Client({int? id, String? name, double? accountBalance})
+  Client({int id = 1, String name = 'A', double accountBalance = 0.0})
       : _id = id,
         _name = name,
         _accountBalance = accountBalance;
   // Getters
-  int? get id => _id;
-  String? get name => _name;
-  double? get accountBalance => _accountBalance;
+  int get id => _id;
+  String get name => _name;
+  double get accountBalance => _accountBalance;
 
   // Setters
   set clientName(String name) => _name = name;
