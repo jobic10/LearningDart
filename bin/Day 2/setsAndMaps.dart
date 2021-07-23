@@ -9,4 +9,9 @@ void main() {
   var amounts = [121, 324, 343, 46, 745, 343, 56, 36, 23];
   final total = amounts.reduce((value, element) => value + element);
   print(total);
+
+  // Fold
+  amounts = [];
+  final total2 = amounts.fold(0, (int s, e) => s + e);
+  print(total2);
 }
