@@ -12,14 +12,14 @@ void main() {
   print(readFile('/home/unknown/Desktop/dart.txt'));
 }
 
-String readFile(String path) {
+String? readFile(String path) {
   try {
     var file = File(path);
     var ra = file.readAsStringSync();
     return ra;
   } catch (e) {
     print(e);
-    return 'EMPTY';
+    return null;
   }
 }
 
