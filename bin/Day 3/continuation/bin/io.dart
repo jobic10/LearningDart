@@ -1,11 +1,13 @@
 import 'dart:io';
+import 'dart:math' as math;
 
 void main() {
   // list('/');
+  var random = math.Random();
   var write = writeFile(
       file: '/home/unknown/Desktop/dart.txt',
-      data: 'Random Data TO File',
-      mode: FileMode.write);
+      data: 'Random Data TO File ${random.nextInt(1000)}\n',
+      mode: FileMode.append);
   print('Write : $write');
 }
 
