@@ -1,6 +1,10 @@
 import 'dart:io';
 
-void main() async {
+void main() {
+  list('/');
+}
+
+void list(String path) async {
   var file = Directory('/');
   if (await file.exists()) {
     for (var f in file.listSync()) {
