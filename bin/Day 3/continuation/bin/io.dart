@@ -9,6 +9,18 @@ void main() {
       data: 'Random Data TO File ${random.nextInt(1000)}\n',
       mode: FileMode.append);
   print('Write : $write');
+  print(readFile('/home/unknown/Desktop/dart.txt'));
+}
+
+String readFile(String path) {
+  try {
+    var file = File(path);
+    var ra = file.readAsStringSync();
+    return ra;
+  } catch (e) {
+    print(e);
+    return 'EMPTY';
+  }
 }
 
 void list(String path) async {
