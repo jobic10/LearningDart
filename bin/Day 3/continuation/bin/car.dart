@@ -13,6 +13,6 @@ class Car {
 
 void main() {
   var camry = Car();
-  camry.steer();
   camry.accelerate();
+  camry.steer();
 }
