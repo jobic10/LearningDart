@@ -1,18 +1,20 @@
 class Car {
-  late int _speed;
+  int? _speed;
+  // late int _speed;
   void accelerate() {
     _speed = 50;
     print('Accelerating Speed : $_speed');
   }
 
   void steer() {
-    _speed += 10;
+    // _speed += 10;
+    _speed = _speed! + 10;
     print('Steering Speed : $_speed');
   }
 }
 
 void main() {
   var camry = Car();
-  camry.accelerate();
   camry.steer();
+  camry.accelerate();
 }
