@@ -1,6 +1,7 @@
 void main() {
   var list = ['C++', 'Java', 'Python', 'Dart'];
   r(list);
+  Student()();
 }
 
 void r(List<String> lst) {
@@ -11,4 +12,8 @@ void r(List<String> lst) {
       print('Inside Element : $element and Outer Element : $element1');
     });
   });
+}
+
+class Student {
+  void call() => print('I am called');
 }
